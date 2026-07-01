@@ -4,9 +4,9 @@ public class PaymentFactory {
 
     public static Payment createPayment(PaymentType type) {
         return switch (type) {
-            case PIX -> new PagamentPix();
-            case CARD -> new PagamentCard();
-            case BOLETO -> new PagamentBoleto();
+            case PIX -> new PixPayment();
+            case CARD -> new CardPayment();
+            case BANK_SLIP -> new BankSlipPayment();
         };
     }
 }

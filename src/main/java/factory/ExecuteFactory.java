@@ -17,9 +17,9 @@ void main() {
 
     var paymentPix = PaymentFactory.createPayment(PaymentType.PIX);
     var paymentCard = PaymentFactory.createPayment(PaymentType.CARD);
-    var paymentBoleto = PaymentFactory.createPayment(PaymentType.BOLETO);
+    var bankSlipPayment = PaymentFactory.createPayment(PaymentType.BANK_SLIP);
 
     paymentPix.process();
     paymentCard.process();
-    paymentBoleto.process();
+    bankSlipPayment.process();
 }

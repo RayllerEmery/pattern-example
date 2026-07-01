@@ -1,5 +1,5 @@
 package factory;
 
 public enum PaymentType {
-    PIX, CARD, BOLETO
+    PIX, CARD, BANK_SLIP
 }

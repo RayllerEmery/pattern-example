@@ -1,8 +1,9 @@
 package factory;
 
-public class PagamentPix implements Payment {
+public class PixPayment implements Payment {
     @Override
     public void process() {
         System.out.println("Processing payment... PIX");
     }
 }
+
